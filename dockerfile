@@ -5,3 +5,4 @@ RUN echo "this my in container" > index.html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 
+
