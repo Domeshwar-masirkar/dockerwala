@@ -1,6 +1,6 @@
-FROM httpd
-WORKDIR /var/www/html/
-RUN touch index.html
+FROM nginx
+WORKDIR /usr/share/nginx/
+RUN touch index.htmlhtml/
 RUN echo "this my in container" > index.html
 EXPOSE 80
 CMD ["httpd", "-d", "foreground;"]
